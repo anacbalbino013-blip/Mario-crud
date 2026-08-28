@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #141414;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #e50914;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.formulario,
+.painel {
+    background: #1f1f1f;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2b2b2b;
+    color: white;
+    font-size: 16px;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: 2px solid #e50914;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+.checkbox label {
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #e50914;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b20710;
+}
+
+.topo-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#contador {
+    background: #e50914;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+.lista-personagens {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(250px, 1fr)
+    );
+    gap: 20px;
+}
+
+.card {
+    background: #2a2a2a;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 6px solid #e50914;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 8px 0;
+    color: #cccccc;
+}
+
+.ativo {
+    color: #2ecc71 !important;
+    font-weight: bold;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.acoes button {
+    width: 50%;
+    padding: 10px;
+}
+
+.editar {
+    background: #2980b9;
+}
+
+.excluir {
+    background: #c0392b;
+}
