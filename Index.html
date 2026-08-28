@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mario Game - CRUD</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Mario Game</h1>
+
+        <p>Cadastro de Personagens</p>
+
+    </header>
+
+    <main class="container">
+
+        <section class="formulario">
+
+            <h2>Novo Personagem</h2>
+
+            <form id="formPersonagem">
+
+                <div class="campo">
+
+                    <label for="nome">
+                        Personagem
+                    </label>
+
+                    <select id="nome" required>
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option value="Mario">
+                            Mario
+                        </option>
+
+                        <option value="Luigi">
+                            Luigi
+                        </option>
+
+                        <option value="Peach">
+                            Peach
+                        </option>
+
+                        <option value="Toad">
+                            Toad
+                        </option>
+
+                        <option value="Koopa">
+                            Koopa
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="tipo">
+                        Tipo
+                    </label>
+
+                    <select id="tipo" required>
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option value="Herói">
+                            Herói
+                        </option>
+
+                        <option value="Princesa">
+                            Princesa
+                        </option>
+
+                        <option value="Aliado">
+                            Aliado
+                        </option>
+
+                        <option value="Inimigo">
+                            Inimigo
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="poder">
+                        Poder
+                    </label>
+
+                    <input
+                        type="text"
+                        id="poder"
+                        placeholder="Digite o poder"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="vidas">
+                        Vidas
+                    </label>
+
+                    <input
+                        type="number"
+                        id="vidas"
+                        min="1"
+                        max="99"
+                        placeholder="Quantidade de vidas"
+                        required
+                    >
+
+                </div>
+
+                <div class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="ativo"
+                    >
+
+                    <label for="ativo">
+                        Personagem ativo
+                    </label>
+
+                </div>
+
+                <button
+                    type="submit"
+                    id="btnCadastrar"
+                >
+                    Cadastrar Personagem
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="painel">
+
+            <div class="topo-lista">
+
+                <h2>
+                    Personagens Cadastrados
+                </h2>
+
+                <span id="contador">
+                    Total: 0
+                </span>
+
+            </div>
+
+            <div
+                id="listaPersonagens"
+                class="lista-personagens"
+            ></div>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
